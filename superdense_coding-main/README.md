@@ -1,4 +1,4 @@
-# Quantum Superdense Coding Implementation
+# AQVH 2025 - 8D Quantum Superdense Coding Suite
 
 ## 🚀 Overview
 
@@ -95,6 +95,20 @@ Performance dashboard: Fidelity, capacity, and success rate over multiple runs
 
 Security monitoring: Simulated eavesdropping detection metrics
 
+## 🏆 Hackathon & Presentation
+
+Recommended Demo Flow:
+
+Live dashboard showcasing real-time 8D superdense coding
+
+Explain Bell state generation and 8D encoding
+
+Highlight 3.459-bit channel capacity and 245% improvement
+
+Demonstrate applications in IoT, healthcare, and finance
+
+Show performance and security analytics.
+
 ## 📂 Project Structure
 ```
 superdense_coding/                    # Your main project folder
@@ -125,3 +139,4 @@ All simulations; no real quantum hardware required.
 Fidelity and security metrics are probabilistic simulations.
 
 Designed for educational, research, and presentation purposes.
+

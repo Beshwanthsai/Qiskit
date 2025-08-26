@@ -4,8 +4,7 @@ High-Dimensional Superdense Decoder
 Implements Bell measurement decoding for 8D protocol
 """
 
-from qiskit import QuantumCircuit, ClassicalRegister, transpile
-from qiskit_aer import Aer
+from qiskit import QuantumCircuit, ClassicalRegister, Aer, execute
 import numpy as np
 from typing import Tuple, List
 
@@ -48,9 +47,8 @@ class HighDimensionalSuperdenseDecoder:
             qc = self._add_8d_measurement(qc)
 
         # Execute measurement
-        simulator = Aer.get_backend('aer_simulator')
-        compiled_circuit = transpile(qc, simulator)
-        job = simulator.run(compiled_circuit, shots=1024)
+        backend = Aer.get_backend('aer_simulator')
+        job = execute(qc, backend, shots=1024)
         result = job.result()
         counts = result.get_counts()
 
